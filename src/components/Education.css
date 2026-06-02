@@ -1,0 +1,55 @@
+.edu-section {
+  padding: 6rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.edu-list { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  transition: border-color 0.3s;
+}
+.edu-card:hover { border-color: rgba(124,107,255,0.4); }
+
+.edu-degree {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.edu-school { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.3rem; }
+.edu-year { color: var(--accent); font-size: 0.85rem; font-weight: 500; }
+
+.edu-cgpa { text-align: right; }
+.cgpa-number {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+.cgpa-label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .edu-section { padding: 4rem 1.5rem; }
+  .edu-card { flex-direction: column; }
+  .edu-cgpa { text-align: left; }
+}

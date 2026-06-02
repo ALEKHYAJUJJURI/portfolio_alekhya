@@ -1,0 +1,87 @@
+.exp-section {
+  padding: 6rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.exp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: linear-gradient(180deg, var(--accent), var(--accent2));
+  border-radius: 4px 0 0 4px;
+}
+.exp-card:hover { border-color: rgba(124,107,255,0.4); }
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.exp-role {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+.exp-company { color: var(--accent); font-weight: 500; font-size: 0.95rem; }
+
+.exp-period {
+  background: rgba(0,229,200,0.08);
+  border: 1px solid rgba(0,229,200,0.2);
+  color: var(--accent3);
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.exp-sub-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 0.8rem;
+}
+
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.exp-bullets li {
+  display: flex;
+  gap: 0.8rem;
+  color: #a09ec0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.exp-bullets li::before {
+  content: '▸';
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .exp-section { padding: 4rem 1.5rem; }
+}

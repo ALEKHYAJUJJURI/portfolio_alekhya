@@ -13,7 +13,7 @@
   padding: 2.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 1.5rem;
   transition: border-color 0.3s;
@@ -32,11 +32,8 @@
 .edu-cgpa { text-align: right; }
 .cgpa-number {
   font-family: 'Syne', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+
   background-clip: text;
   line-height: 1;
 }

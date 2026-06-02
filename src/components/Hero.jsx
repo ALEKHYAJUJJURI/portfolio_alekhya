@@ -47,11 +47,11 @@ export default function Hero() {
       <div className="hero-bg-orb orb2" />
       <div className="hero-content">
         <div className="hero-tag">Available for new opportunities</div>
-        <h1 className="hero-name">
+        <h2 className="hero-name ">
           Alekhya
-          <br />
-          <span className="highlight">Jujjuri</span>
-        </h1>
+      
+          <span > Jujjuri</span>
+        </h2>
         <p className="hero-title">
           <span>{displayText}</span>
           <span className="typing-cursor" />

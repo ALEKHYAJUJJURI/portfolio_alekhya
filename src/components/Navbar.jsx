@@ -4,7 +4,7 @@ import './Navbar.css';
 export default function Navbar() {
   return (
     <nav className="nav">
-      <a className="nav-logo" href="#about"><span>A</span>lekhya</a>
+      <a className="nav-logo" href="#about"><span>A</span>lekhya Jujjuri</a>
       <ul className="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>

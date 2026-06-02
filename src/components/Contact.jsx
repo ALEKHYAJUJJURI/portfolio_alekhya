@@ -24,7 +24,7 @@ export default function Contact() {
           ))}
           <a
             className="contact-item contact-download"
-           href="alekhya_jujjuri_updated.pdf"
+        href="final_Resume (4).pdf"
             download="Alekhya_Jujjuri_Resume.pdf"
           >
             <div className="contact-icon">📄</div>

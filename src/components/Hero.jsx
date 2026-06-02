@@ -70,7 +70,7 @@ export default function Hero() {
           </a>
           <a
             className="btn btn-download"
-            href="alekhya_jujjuri_updated.pdf"
+            href="final_Resume (4).pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

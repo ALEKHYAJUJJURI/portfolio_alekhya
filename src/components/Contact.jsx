@@ -22,14 +22,14 @@ export default function Contact() {
               <span>{c.label}</span>
             </a>
           ))}
-          <a
+          {/* <a
             className="contact-item contact-download"
-        href="final_Resume (4).pdf"
-            download="Alekhya_Jujjuri_Resume.pdf"
+        href="Alekhya_J_Resume.pdf"
+            download="Alekhya_J_Resume.pdf"
           >
             <div className="contact-icon">📄</div>
             <span>Download Resume</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

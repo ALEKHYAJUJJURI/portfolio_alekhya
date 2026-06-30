@@ -68,14 +68,14 @@ export default function Hero() {
           <a className="btn btn-ghost" href="#contact">
             Get in Touch
           </a>
-          <a
+          {/* <a
             className="btn btn-download"
-            href="final_Resume (4).pdf"
+            href="Alekhya_J_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
           Preview Resume
-          </a>
+          </a> */}
         </div>
         <div className="hero-socials">
           <a

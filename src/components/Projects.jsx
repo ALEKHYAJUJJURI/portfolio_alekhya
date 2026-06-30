@@ -3,6 +3,21 @@ import './Projects.css';
 
 const projects = [
   {
+    icon: '🛒',
+    name: 'ShopEase E-commerce Platform',
+    desc: 'Currently developing a full-stack e-commerce application with a modern shopping experience. Features include product browsing, search and filtering, wishlist, shopping cart, secure authentication, order management, and responsive UI. Built with scalable architecture and REST API integration.',
+    stack: [
+      'React',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Redux Toolkit',
+      'JWT',
+      'REST APIs',
+      'Tailwind CSS'
+    ],
+  },
+  {
     icon: '🏥',
     name: 'OK Telehealth App',
     desc: 'Production-grade mobile application for Android and iOS. Features Firebase Google Login, push notifications, biometric authentication, and camera/microphone device management. Published on Apple App Store via TestFlight.',

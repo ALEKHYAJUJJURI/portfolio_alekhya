@@ -3,9 +3,9 @@ import "./Hero.css";
 
 const TITLES = [
   "Frontend Developer",
-  "React Native Developer",
-  "Mobile App Developer",
-  "React.js Developer",
+  "React.js & React Native Developer",
+  "Mobile Application Developer",
+  "Full Stack JavaScript Developer",
 ];
 
 export default function Hero() {

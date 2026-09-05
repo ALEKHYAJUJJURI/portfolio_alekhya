@@ -4,27 +4,45 @@ import './Skills.css';
 const skillGroups = [
   {
     title: 'Languages',
-    tags: ['JavaScript ES6+', 'TypeScript', 'HTML5', 'CSS3', 'Python'],
+    tags: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
   },
   {
-    title: 'Frameworks & Libraries',
-    tags: ['React', 'React Native', 'Expo', 'React Native CLI', 'Tailwind CSS', 'Bootstrap', 'Material UI', 'Ant Design'],
+    title: 'Frontend',
+    tags: [
+      'React.js', 'React Native', 'Expo', 'React Native CLI',
+      'Tailwind CSS', 'Ant Design', 'Material UI', 'Bootstrap',
+      'Redux Toolkit', 'Context API', 'Responsive Design', 'Reusable Components',
+    ],
   },
   {
     title: 'Backend & APIs',
-    tags: ['REST APIs', 'Axios', 'Fetch', 'Firebase', 'Node.js', 'Express.js', 'OAuth', 'JSON'],
+    tags: ['REST APIs', 'Axios', 'Node.js', 'Express.js', 'MongoDB'],
   },
   {
-    title: 'Mobile Development',
-    tags: ['Android', 'iOS', 'Expo Builds', 'Biometric Auth', 'App Store Connect', 'TestFlight', 'Google Play Console'],
+    title: 'Services',
+    tags: [
+      'Firebase', 'Authentication', 'Push Notifications',
+      'Google Maps', 'Video SDK', 'Stripe', 'PayPal',
+    ],
   },
   {
-    title: 'Databases & Cloud',
-    tags: ['MongoDB', 'SQL', 'Netlify', 'Vercel', 'GitHub Pages'],
+    title: 'Mobile & Release',
+    tags: [
+      'Android', 'iOS', 'Navigation', 'Deep Linking', 'Permissions',
+      'Camera', 'Microphone', 'Biometric Auth', 'EAS Build', 'APK/AAB',
+      'Google Play Console', 'App Store Connect', 'TestFlight',
+    ],
   },
   {
-    title: 'Tools & Workflow',
-    tags: ['Git', 'GitHub', 'Postman', 'VS Code', 'Android Studio', 'Xcode', 'Chrome DevTools'],
+    title: 'Tools & Practices',
+    tags: [
+      'Git', 'GitHub', 'GitHub Actions', 'Docker', 'CI/CD',
+      'Postman', 'Android Studio', 'Xcode', 'VS Code', 'Agile', 'Scrum',
+    ],
+  },
+  {
+    title: 'AI Tools',
+    tags: ['ChatGPT', 'Claude', 'Perplexity'],
   },
 ];
 
@@ -36,7 +54,10 @@ export default function Skills() {
         <h2 className="section-title reveal delay-1">What I Work With</h2>
         <div className="skills-grid">
           {skillGroups.map((group, i) => (
-            <div key={group.title} className={`skill-group reveal delay-${(i % 3) + 1}`}>
+            <div
+              key={group.title}
+              className={`skill-group reveal delay-${(i % 4) + 1}`}
+            >
               <div className="skill-group-title">{group.title}</div>
               <div className="skill-tags">
                 {group.tags.map(tag => (

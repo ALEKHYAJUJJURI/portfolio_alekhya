@@ -9,7 +9,7 @@ export default function Footer() {
       fontSize: '0.8rem',
       borderTop: '1px solid var(--border)',
     }}>
-      <p>Designed &amp; built by Alekhya Jujjuri · 2025</p>
+      <p>Designed &amp; built by Alekhya Jujjuri · 2026</p>
     </footer>
   );
 }

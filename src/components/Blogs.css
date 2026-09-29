@@ -1,0 +1,178 @@
+/* ── Blog section wrapper ── */
+.blog-section {
+  padding: 4rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.blog-header {
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--border, rgba(0,0,0,0.12));
+}
+
+.blog-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.blog-icon {
+  font-size: 1rem;
+  color: var(--accent, #4f46e5);
+}
+
+.blog-header-title h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text, #111);
+}
+
+.blog-header-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #555);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* ── Tag filters ── */
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 0.3rem 0.85rem;
+  background: transparent;
+  border: 1px solid var(--border, rgba(0,0,0,0.12));
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  color: var(--text-secondary, #555);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-btn:hover {
+  border-color: var(--text, #111);
+  color: var(--text, #111);
+}
+.filter-btn.active {
+  background: var(--text, #111);
+  border-color: var(--text, #111);
+  color: #fff;
+}
+
+/* ── Grid: 2 columns with dashed dividers like the reference ── */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px dashed var(--border, rgba(0,0,0,0.12));
+  border-left: 1px dashed var(--border, rgba(0,0,0,0.12));
+}
+
+.blog-card {
+  padding: 1.75rem 1.5rem;
+  border-right: 1px dashed var(--border, rgba(0,0,0,0.12));
+  border-bottom: 1px dashed var(--border, rgba(0,0,0,0.12));
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: background 0.15s;
+}
+.blog-card:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* ── Card internals ── */
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted, #888);
+}
+
+.read-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-date {
+  font-size: 0.72rem;
+}
+
+.blog-card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text, #111);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  flex: 1;
+}
+
+.blog-card-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary, #555);
+  line-height: 1.65;
+}
+
+.blog-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.blog-tag {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid var(--border, rgba(0,0,0,0.12));
+  color: var(--text-secondary, #555);
+  background: transparent;
+}
+
+.read-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text, #111);
+  background: none;
+  border: none;
+  border-top: 1px dashed var(--border, rgba(0,0,0,0.12));
+  padding: 0.75rem 0 0;
+  margin-top: auto;
+  cursor: pointer;
+  width: 100%;
+  transition: color 0.15s, gap 0.15s;
+  font-family: inherit;
+}
+.read-link:hover {
+  gap: 8px;
+  color: var(--accent, #4f46e5);
+}
+
+/* ── Empty state ── */
+.blog-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted, #888);
+  font-size: 0.875rem;
+  border: 1px dashed var(--border, rgba(0,0,0,0.12));
+  border-radius: 8px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .blog-section { padding: 3rem 1.25rem; }
+  .blog-grid { grid-template-columns: 1fr; }
+}

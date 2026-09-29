@@ -4,12 +4,12 @@ import './Skills.css';
 const skillGroups = [
   {
     title: 'Languages',
-    tags: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
+    tags: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3','Python'],
   },
   {
     title: 'Frontend',
     tags: [
-      'React.js', 'React Native', 'Expo', 'React Native CLI',
+      'React.js', 'React Native', 'Expo', 'Next.js', 'React Native CLI',
       'Tailwind CSS', 'Ant Design', 'Material UI', 'Bootstrap',
       'Redux Toolkit', 'Context API', 'Responsive Design', 'Reusable Components',
     ],

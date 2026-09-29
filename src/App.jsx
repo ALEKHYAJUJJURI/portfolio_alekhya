@@ -12,6 +12,7 @@ import ScrollProgress from './components/ScrollProgress';
 import CursorGlow from './components/CursorGlow';
 import Particles from './components/Particles';
 import { useScrollReveal } from './hooks/useScrollReveal';
+import BlogList from './components/Blogs';
 
 export default function App() {
   useScrollReveal();
@@ -29,6 +30,8 @@ export default function App() {
       <Experience />
       <Divider />
       <Projects />
+      <Divider />
+      <BlogList />
       <Divider />
       <Education />
       <Divider />

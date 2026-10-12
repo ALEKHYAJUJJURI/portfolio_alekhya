@@ -47,11 +47,11 @@ export default function Hero() {
       <div className="hero-bg-orb orb2" />
       <div className="hero-content">
         <div className="hero-tag">Available for new opportunities</div>
-        <h2 className="hero-name ">
+        <h1 className="hero-name">
           Alekhya
       
-          <span > Jujjuri</span>
-        </h2>
+          <span className="highlight"> Jujjuri</span>
+        </h1>
         <p className="hero-title">
           <span>{displayText}</span>
           <span className="typing-cursor" />
@@ -70,11 +70,11 @@ export default function Hero() {
           </a>
           {/* <a
             className="btn btn-download"
-            href="Alekhya_J_Resume.pdf"
+            href="/alekhya_jujjuri_updated.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-          Preview Resume
+            Preview Resume
           </a> */}
         </div>
         <div className="hero-socials">

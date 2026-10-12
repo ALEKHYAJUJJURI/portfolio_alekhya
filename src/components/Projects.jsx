@@ -3,80 +3,211 @@ import './Projects.css';
 
 const projects = [
   {
+    icon: '✦',
+    name: 'HealthSync / OK TeleHealth',
+    type: 'Mobile · iOS & Android',
+    typeColor: 'blue',
+    desc: 'Cross-platform healthcare app with secure authentication, appointments, consultations, and profile workflows. Integrated biometrics, Google and Apple sign-in, Video SDK, OCR, and payment flows. Builds and release testing include TestFlight.',
+    stack: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Context API',
+      'SecureStore',
+      'Video SDK',
+      'Stripe',
+      'PayPal',
+    ],
+    highlights: [
+      'Authentication & biometrics',
+      'Appointment and consultation flows',
+      'iOS and Android build workflows',
+    ],
+  },
+  {
+    icon: '⌘',
+    name: 'TeleHealth Web Platform',
+    type: 'Web · Professional',
+    typeColor: 'blue',
+    desc: 'Responsive doctor and patient platform for authentication, appointments, consultations, and profiles. Built reusable interfaces, managed state, and connected healthcare workflows to REST APIs and third-party SDKs.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Redux',
+      'Tailwind CSS',
+      'Ant Design',
+      'REST APIs',
+      'Google Maps',
+      'Video SDK',
+    ],
+    highlights: [
+      'Role-based user journeys',
+      'Reusable UI components',
+      'Performance improvements',
+    ],
+  },
+  {
+    icon: '◈',
+    name: 'Claim Radar',
+    type: 'Mobile · Professional',
+    typeColor: 'orange',
+    desc: 'React Native app for insurance and financial claim workflows. Contributed reusable components, REST API integration, Context API state management, OTP flows, payment integration, and regression validation.',
+    stack: [
+      'React Native',
+      'TypeScript',
+      'Expo',
+      'Context API',
+      'REST APIs',
+    ],
+    highlights: [
+      'OTP and payment flows',
+      'API-driven screens',
+      'Feature and regression testing',
+    ],
+  },
+  {
     icon: '🛒',
     name: 'ShopEase',
-    type: 'Personal Project',
+    type: 'Personal · In Progress',
     typeColor: 'green',
-    desc: 'Full-stack mobile e-commerce app with REST API integration, MongoDB data management, and reusable UI components. Exploring Docker and GitHub Actions CI/CD workflows.',
-    stack: ['React Native', 'Expo', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'Docker', 'GitHub Actions'],
-  },
-  {
-    icon: '🏥',
-    name: 'OK TeleHealth App',
-    type: 'Production · App Store',
-    typeColor: 'blue',
-    desc: 'Cross-platform telehealth mobile app for Android and iOS. Built responsive UI components, integrated REST APIs for auth, appointments, consultations, and profiles. Implemented push notifications, deep linking, camera, microphone, biometric auth, Google Maps, Video SDK, Stripe, and PayPal. Managed APK/AAB and IPA builds with TestFlight and App Store release workflows.',
-    stack: ['React Native', 'Expo', 'TypeScript', 'Redux Toolkit', 'Firebase', 'REST APIs', 'Google Maps', 'Video SDK', 'Stripe', 'PayPal'],
-  },
-  {
-    icon: '💊',
-    name: 'TeleHealth Web Platform',
-    type: 'Production',
-    typeColor: 'blue',
-    desc: 'Responsive web platform for authentication, appointments, consultations, user profiles, and healthcare workflows. Built reusable UI components and integrated Google Maps, Video SDK, Stripe, and PayPal. Collaborated with backend and QA in an Agile/Scrum environment.',
-    stack: ['React', 'TypeScript', 'Redux Toolkit', 'Firebase', 'REST APIs', 'Tailwind CSS', 'Ant Design', 'Google Maps', 'Video SDK', 'Stripe', 'PayPal'],
-  },
-  {
-    icon: '🛡️',
-    name: 'Claim Radar',
-    type: 'Production',
-    typeColor: 'orange',
-    desc: 'Mobile app for discovering and tracking insurance and financial claims. Built reusable components, integrated REST APIs, implemented state management and responsive interfaces. Supported feature testing and regression validation.',
-    stack: ['React Native', 'TypeScript', 'REST APIs', 'Expo'],
+    desc: 'A full-stack e-commerce mobile app built with Expo and a Node.js backend. Current work includes registration, MongoDB user storage, authentication setup, and separate user/admin experiences.',
+    stack: [
+      'React Native',
+      'Expo',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Docker',
+      'GitHub Actions',
+    ],
+    highlights: [
+      'Registration and user storage',
+      'User/admin screens',
+      'CI workflow exploration',
+    ],
+    github: 'https://github.com/ALEKHYAJUJJURI/e-commerce_app_with_backend',
   },
   {
     icon: '📰',
     name: 'News App',
     type: 'Personal Project',
     typeColor: 'green',
-    desc: 'Real-time news app with category filtering, search, offline caching, and bookmarking. Managed lightweight state using Context API.',
-    stack: ['React Native', 'Context API', 'Public APIs', 'Offline Cache'],
+    desc: 'A mobile news-reading experience with category filtering, search, bookmarking, and offline-friendly caching, using Context API for lightweight state management.',
+    stack: [
+      'React Native',
+      'Context API',
+      'REST APIs',
+      'AsyncStorage',
+    ],
+    highlights: [
+      'Search and category filters',
+      'Bookmarking',
+      'Offline-friendly experience',
+    ],
+    github: 'https://github.com/ALEKHYAJUJJURI/News_App',
+  },
+  {
+    icon: '🐾',
+    name: 'MyPetApp',
+    type: 'Personal Project',
+    typeColor: 'green',
+    desc: 'A personal mobile app project demonstrating cross-platform interface development with React Native. Explore the repository for implementation details.',
+    stack: ['React Native', 'JavaScript'],
+    github: 'https://github.com/ALEKHYAJUJJURI/MyPetApp',
+  },
+  {
+    icon: '✦',
+    name: 'SkillBridge',
+    type: 'Web · Career Learning Platform',
+    typeColor: 'purple',
+    desc: 'A career roadmap platform built with Next.js to help users explore career paths, discover relevant skills, and track learning progress. Features dynamic roadmap pages, reusable React components, and a responsive interface.',
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'App Router',
+      'localStorage',
+    ],
+    highlights: [
+      'Career roadmaps and dynamic routes',
+      'Learning progress tracking',
+      'Responsive UI and reusable components',
+    ],
+    github: 'https://github.com/ALEKHYAJUJJURI/SkillBridge',
   },
 ];
 
 const TYPE_COLORS = {
-  blue:   { bg: 'rgba(88,166,255,0.1)',   color: '#58a6ff',  border: 'rgba(88,166,255,0.25)'  },
-  green:  { bg: 'rgba(63,185,80,0.1)',    color: '#3fb950',  border: 'rgba(63,185,80,0.25)'   },
-  orange: { bg: 'rgba(227,179,65,0.1)',   color: '#e3b341',  border: 'rgba(227,179,65,0.25)'  },
+  blue: {
+    bg: 'rgba(88,166,255,.1)',
+    color: '#79b8ff',
+    border: 'rgba(88,166,255,.28)',
+  },
+  green: {
+    bg: 'rgba(63,185,80,.1)',
+    color: '#56d364',
+    border: 'rgba(63,185,80,.28)',
+  },
+  orange: {
+    bg: 'rgba(227,179,65,.1)',
+    color: '#e3b341',
+    border: 'rgba(227,179,65,.28)',
+  },
+  purple: {
+    bg: 'rgba(188,140,255,.1)',
+    color: '#bc8cff',
+    border: 'rgba(188,140,255,.28)',
+  },
 };
 
 export default function Projects() {
   return (
-    <section id="projects" className="projects-section">
-      <div className="section-label reveal">My Work</div>
-      <h2 className="section-title reveal delay-1">Projects</h2>
+    <section id="projects" className="projects-section" aria-labelledby="projects-title">
+      <div className="section-label reveal">Selected Work</div>
+      <h2 id="projects-title" className="section-title reveal delay-1">Projects that solve real problems</h2>
+      <p className="projects-intro reveal delay-2">
+        A mix of professional web and mobile product work, plus projects I’m building to keep learning.
+      </p>
       <div className="projects-grid">
-        {projects.map((p, i) => {
-          const tc = TYPE_COLORS[p.typeColor];
+        {projects.map((project, i) => {
+          const tone = TYPE_COLORS[project.typeColor];
           return (
-            <div key={p.name} className={`project-card reveal delay-${(i % 4) + 1}`}>
+            <article key={project.name} className={`project-card reveal delay-${(i % 4) + 1}`}>
               <div className="project-card-top">
-                <div className="project-icon">{p.icon}</div>
-                <span
-                  className="project-type-badge"
-                  style={{ background: tc.bg, color: tc.color, border: `1px solid ${tc.border}` }}
-                >
-                  {p.type}
+                <div className="project-icon" aria-hidden="true">{project.icon}</div>
+                <span className="project-type-badge" style={{ background: tone.bg, color: tone.color, border: `1px solid ${tone.border}` }}>
+                  {project.type}
                 </span>
               </div>
-              <div className="project-name">{p.name}</div>
-              <p className="project-desc">{p.desc}</p>
-              <div className="project-stack">
-                {p.stack.map(t => <span key={t} className="stack-tag">{t}</span>)}
+              <h3 className="project-name">{project.name}</h3>
+              <p className="project-desc">{project.desc}</p>
+              {project.highlights && (
+                <ul className="project-highlights">
+                  {project.highlights.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              )}
+              <div className="project-stack" aria-label={`${project.name} technologies`}>
+                {project.stack.map((tech) => <span key={tech} className="stack-tag">{tech}</span>)}
               </div>
-            </div>
+              <div className="project-actions">
+                {project.github ? (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.name} source code on GitHub`}>
+                    View source <span aria-hidden="true">↗</span>
+                  </a>
+                ) : (
+                  <span className="project-private-note">Professional project · details available on request</span>
+                )}
+              </div>
+            </article>
           );
         })}
+      </div>
+      <div className="projects-more">
+        <a className="btn btn-ghost" href="https://github.com/ALEKHYAJUJJURI" target="_blank" rel="noopener noreferrer">
+          Explore more on GitHub <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </section>
   );

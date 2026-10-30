@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 
+
 const projects = [
   {
     icon: '✦',
@@ -66,6 +67,25 @@ const projects = [
     ],
   },
   {
+    icon: '📰',
+    name: 'News App',
+    type: 'Personal Project',
+    typeColor: 'green',
+    desc: 'A mobile news-reading experience with category filtering, search, bookmarking, and offline-friendly caching, using Context API for lightweight state management.',
+    stack: [
+      'React Native',
+      'Context API',
+      'REST APIs',
+      'AsyncStorage',
+    ],
+    highlights: [
+      'Search and category filters',
+      'Bookmarking',
+      'Offline-friendly experience',
+    ],
+    github: 'https://github.com/ALEKHYAJUJJURI/News_App',
+  },
+  {
     icon: '🛒',
     name: 'ShopEase',
     type: 'Personal · In Progress',
@@ -87,25 +107,7 @@ const projects = [
       'CI workflow exploration',
     ],
     github: 'https://github.com/ALEKHYAJUJJURI/e-commerce_app_with_backend',
-  },
-  {
-    icon: '📰',
-    name: 'News App',
-    type: 'Personal Project',
-    typeColor: 'green',
-    desc: 'A mobile news-reading experience with category filtering, search, bookmarking, and offline-friendly caching, using Context API for lightweight state management.',
-    stack: [
-      'React Native',
-      'Context API',
-      'REST APIs',
-      'AsyncStorage',
-    ],
-    highlights: [
-      'Search and category filters',
-      'Bookmarking',
-      'Offline-friendly experience',
-    ],
-    github: 'https://github.com/ALEKHYAJUJJURI/News_App',
+    download: 'https://drive.google.com/file/d/19jGkBGnmtrfYQ2XixDLke3i-FhFHDPjd/view?usp=drive_link',
   },
   {
     icon: '🐾',
@@ -115,6 +117,7 @@ const projects = [
     desc: 'A personal mobile app project demonstrating cross-platform interface development with React Native. Explore the repository for implementation details.',
     stack: ['React Native', 'JavaScript'],
     github: 'https://github.com/ALEKHYAJUJJURI/MyPetApp',
+    download: 'https://drive.google.com/file/d/1aIE5GVGEihymI5G9xNOyoxl_LSSVAytP/view?usp=sharing',
   },
   {
     icon: '✦',
@@ -136,6 +139,7 @@ const projects = [
       'Responsive UI and reusable components',
     ],
     github: 'https://github.com/ALEKHYAJUJJURI/SkillBridge',
+    liveDemo: 'https://skill-bridge-xi-pink.vercel.app/',
   },
 ];
 
@@ -174,33 +178,88 @@ export default function Projects() {
         {projects.map((project, i) => {
           const tone = TYPE_COLORS[project.typeColor];
           return (
-            <article key={project.name} className={`project-card reveal delay-${(i % 4) + 1}`}>
-              <div className="project-card-top">
-                <div className="project-icon" aria-hidden="true">{project.icon}</div>
-                <span className="project-type-badge" style={{ background: tone.bg, color: tone.color, border: `1px solid ${tone.border}` }}>
-                  {project.type}
-                </span>
-              </div>
-              <h3 className="project-name">{project.name}</h3>
-              <p className="project-desc">{project.desc}</p>
-              {project.highlights && (
-                <ul className="project-highlights">
-                  {project.highlights.map((item) => <li key={item}>{item}</li>)}
-                </ul>
-              )}
-              <div className="project-stack" aria-label={`${project.name} technologies`}>
-                {project.stack.map((tech) => <span key={tech} className="stack-tag">{tech}</span>)}
-              </div>
-              <div className="project-actions">
-                {project.github ? (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.name} source code on GitHub`}>
-                    View source <span aria-hidden="true">↗</span>
-                  </a>
-                ) : (
-                  <span className="project-private-note">Professional project · details available on request</span>
-                )}
-              </div>
-            </article>
+         
+<article key={project.name} className={`project-card reveal delay-${(i % 4) + 1}`}>
+  <div className="project-card-top">
+    <div className="project-icon" aria-hidden="true">
+      {project.icon}
+    </div>
+    <span
+      className="project-type-badge"
+      style={{
+        background: tone.bg,
+        color: tone.color,
+        border: `1px solid ${tone.border}`,
+      }}
+    >
+      {project.type}
+    </span>
+  </div>
+
+  <h3 className="project-name">{project.name}</h3>
+  <p className="project-desc">{project.desc}</p>
+
+  {project.highlights && (
+    <ul className="project-highlights">
+      {project.highlights.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  )}
+
+  <div
+    className="project-stack"
+    aria-label={`${project.name} technologies`}
+  >
+    {project.stack.map((tech) => (
+      <span key={tech} className="stack-tag">
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  <div className="project-actions">
+    {project.github && (
+      <a
+        href={project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`View ${project.name} source code on GitHub`}
+      >
+        View Source <span aria-hidden="true">↗</span>
+      </a>
+    )}
+
+    {project.liveDemo && (
+      <a
+        href={project.liveDemo}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`View ${project.name} live demo`}
+      >
+        Live Demo <span aria-hidden="true">↗</span>
+      </a>
+    )}
+
+    {project.download && (
+      <a
+        href={project.download}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Download ${project.name} APK`}
+      >
+        Download APK <span aria-hidden="true">↓</span>
+      </a>
+    )}
+
+    {!project.github && !project.liveDemo && !project.download && (
+      <span className="project-private-note">
+        Professional project · details available on request
+      </span>
+    )}
+  </div>
+</article>
+
           );
         })}
       </div>

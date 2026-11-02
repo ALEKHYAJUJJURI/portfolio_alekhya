@@ -25,6 +25,7 @@ const projects = [
       'iOS and Android build workflows',
     ],
   },
+
   {
     icon: '⌘',
     name: 'TeleHealth Web Platform',
@@ -47,6 +48,7 @@ const projects = [
       'Performance improvements',
     ],
   },
+
   {
     icon: '◈',
     name: 'Claim Radar',
@@ -66,11 +68,12 @@ const projects = [
       'Feature and regression testing',
     ],
   },
+
   {
     icon: '📰',
     name: 'News App',
-    type: 'Personal Project',
-    typeColor: 'green',
+type: 'Training Project · Mobile',
+    typeColor: 'orange',
     desc: 'A mobile news-reading experience with category filtering, search, bookmarking, and offline-friendly caching, using Context API for lightweight state management.',
     stack: [
       'React Native',
@@ -85,6 +88,7 @@ const projects = [
     ],
     github: 'https://github.com/ALEKHYAJUJJURI/News_App',
   },
+
   {
     icon: '🛒',
     name: 'ShopEase',
@@ -109,16 +113,37 @@ const projects = [
     github: 'https://github.com/ALEKHYAJUJJURI/e-commerce_app_with_backend',
     download: 'https://drive.google.com/file/d/19jGkBGnmtrfYQ2XixDLke3i-FhFHDPjd/view?usp=drive_link',
   },
+
   {
     icon: '🐾',
     name: 'MyPetApp',
-    type: 'Personal Project',
-    typeColor: 'green',
-    desc: 'A personal mobile app project demonstrating cross-platform interface development with React Native. Explore the repository for implementation details.',
-    stack: ['React Native', 'JavaScript'],
+type: 'Technical Assignment · Mobile',
+    typeColor: 'purple',
+    desc: 'An interactive virtual pet mobile application featuring pet state management, offline progression, persistent local storage, custom graphics, touch interactions, and haptic feedback.',
+    stack: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Redux Toolkit',
+      'React Redux',
+      'AsyncStorage',
+      'MMKV',
+      'React Native Skia',
+      'Gesture Handler',
+      'Reanimated',
+      'Expo Haptics',
+    ],
+    highlights: [
+      'Interactive virtual pet experience',
+      'Redux Toolkit state management',
+      'Persistent storage and offline progression',
+      'Custom graphics and touch interactions',
+      'Haptic feedback',
+    ],
     github: 'https://github.com/ALEKHYAJUJJURI/MyPetApp',
     download: 'https://drive.google.com/file/d/1aIE5GVGEihymI5G9xNOyoxl_LSSVAytP/view?usp=sharing',
   },
+
   {
     icon: '✦',
     name: 'SkillBridge',
@@ -140,6 +165,39 @@ const projects = [
     ],
     github: 'https://github.com/ALEKHYAJUJJURI/SkillBridge',
     liveDemo: 'https://skill-bridge-xi-pink.vercel.app/',
+  },
+
+  {
+    icon: '🎁',
+    name: 'Tribe Green – Corporate Gifting Catalogue',
+    type: 'Technical Assignment - Full Stack · Web & Android',
+    typeColor: 'purple',
+    desc: 'A full-stack corporate gifting catalogue and enquiry management system developed as a technical hiring assignment. Features product discovery, category and budget filters, customisation options, enquiry submission, WhatsApp integration, and a protected admin dashboard for managing customer enquiries.',
+    stack: [
+      'React.js',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS v4',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Mongoose',
+      'React Router',
+      'REST APIs',
+    ],
+    highlights: [
+      'Product catalogue with category, occasion, budget, and search filters',
+      'Product details and customisation options',
+      'Enquiry submission with backend integration',
+      'WhatsApp enquiry integration',
+      'Protected admin dashboard and authentication',
+      'Enquiry status tracking and CSV export',
+      'Shared backend for website and Android application',
+      'Responsive desktop and mobile UI',
+    ],
+    liveDemo: 'https://tribe-green-w8cf.vercel.app/',
+    github: 'https://github.com/ALEKHYAJUJJURI/tribe-green.git',
+    download: 'https://drive.google.com/file/d/1seZaOle1Tg-_UPmojjaGDgzc94IysFku/view?usp=drivesdk',
   },
 ];
 
@@ -169,11 +227,15 @@ const TYPE_COLORS = {
 export default function Projects() {
   return (
     <section id="projects" className="projects-section" aria-labelledby="projects-title">
-      <div className="section-label reveal">Selected Work</div>
-      <h2 id="projects-title" className="section-title reveal delay-1">Projects that solve real problems</h2>
-      <p className="projects-intro reveal delay-2">
-        A mix of professional web and mobile product work, plus projects I’m building to keep learning.
-      </p>
+     <div className="section-label reveal">My Work</div>
+<h2 id="projects-title" className="section-title reveal delay-1">
+  Projects built with purpose
+</h2>
+<p className="projects-intro reveal delay-2">
+  Explore my professional experience, full-stack applications,
+  mobile projects, and hands-on technical assignments across
+  web and mobile development.
+</p>
       <div className="projects-grid">
         {projects.map((project, i) => {
           const tone = TYPE_COLORS[project.typeColor];
